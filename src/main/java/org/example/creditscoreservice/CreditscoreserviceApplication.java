@@ -9,5 +9,4 @@ public class CreditscoreserviceApplication {
     public static void main(String[] args) {
         SpringApplication.run(CreditscoreserviceApplication.class, args);
     }
-
 }

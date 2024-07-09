@@ -1,22 +1,21 @@
 package org.example.creditscoreservice.entity;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.math.BigDecimal;
-import java.util.Date;
-import java.util.List;
 
-@Getter
-@Setter
+@Data
 @Entity
 @Table(name = "persons")
 public class Person {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
+
+    @Column(name = "inn")
+    private Long inn;
 
     @Column(name = "full_name")
     private String fullname;
@@ -24,9 +23,9 @@ public class Person {
     @Column(name = "credit_score")
     private BigDecimal creditScore;
 
-    @Column(name = "phones")
-    private String phones;
+    @Column(name = "phone")
+    private String phone;
 
-    @Column(name = "emails")
-    private String emails;
+    @Column(name = "email")
+    private String email;
 }
