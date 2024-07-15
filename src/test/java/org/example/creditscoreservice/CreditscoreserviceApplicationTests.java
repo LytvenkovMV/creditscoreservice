@@ -9,5 +9,4 @@ class CreditscoreserviceApplicationTests {
     @Test
     void contextLoads() {
     }
-
 }
